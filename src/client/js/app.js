@@ -40,7 +40,6 @@ btnsubmit.addEventListener('click',function(event){
         document.querySelector('.detail').querySelector('.temp').textContent=`Temperature: ${data.temp}`;
         document.querySelector('.detail').querySelector('.describe').textContent=`There is: ${data.describe}`;
         document.querySelector('.detail').querySelector('.Days__away').textContent=`${place} is ${days} days away`;
-
     })
     
 })

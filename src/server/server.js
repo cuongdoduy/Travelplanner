@@ -12,11 +12,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Cors for cross origin allowance
 const cors = require('cors');
+const { resolveSoa } = require('dns');
 app.use(cors());
-app.use(express.static('dist'))
+app.use(express.static('dist'));
 
 app.get('/', function (req, res) {
-    res.sendFile("You have done")
+    res.sendFile('dist/index.html');
+})
+app.get('/travelplanner.html',function(req,res){
+    res.send('.dist/travelplanner.html');
 })
 app.listen(8000, function () {
     console.log('Example app listening on port 8000!')
