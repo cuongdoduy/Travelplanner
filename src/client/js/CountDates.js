@@ -1,4 +1,4 @@
-function checkYear(value)
+export function checkYear(value)
 {
     if ((value%400==0)&&(value%100==0)) return true;
     if (value%4==0) return true;

@@ -1,0 +1,17 @@
+@media(max-width:739px)
+  {
+      .Result
+      {
+          flex-direction: column;
+      }
+      #Img__Place {
+          max-width: 100%;
+      }
+      .detail {
+          padding: 0;
+          /* padding-left: 12px; */
+          text-align: justify;
+          margin: auto;
+          width: 98%;
+      }
+  }

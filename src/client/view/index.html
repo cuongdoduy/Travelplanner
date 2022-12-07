@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- <link rel="stylesheet" href="../styles/style.scss"> -->
+  <!-- <link rel="stylesheet" href="../styles/responsive.css"> -->
 </head>
 <body>
     <div class="main">
@@ -47,5 +48,14 @@
           </div>
         </div>
       </div>
+      <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script>
 </body>
 </html>
