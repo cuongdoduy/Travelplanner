@@ -16,6 +16,19 @@
 * Build tool - Webpack
 * Using JavaScript
 * Call API from weatherbit, geonames, pixelbay.
+## Require Enviroment
+
+* Install express
+* Install Webpack
+* Install html-webpack-plugin
+* Install dotenv
+* Install supertest to test express server
+* Install css loader
+
+## Step to do
+
+* Run "npm run build-prod"
+* Run "npm start"
 
 ## Authors
 - Start code is supplied by [Udacity](https://github.com/udacity)

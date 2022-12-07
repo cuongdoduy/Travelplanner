@@ -1,6 +1,6 @@
 var path = require('path')
 const express = require('express')
-const app = require('./app');
+const app = require("./app.js")
 const bodyParser = require('body-parser')
 const dotenv = require('dotenv');
 dotenv.config();
@@ -14,14 +14,8 @@ app.use(bodyParser.json());
 const cors = require('cors');
 const { resolveSoa } = require('dns');
 app.use(cors());
-app.use(express.static('dist'));
 
-app.get('/', function (req, res) {
-    res.sendFile('dist/index.html');
-})
-app.get('/travelplanner.html',function(req,res){
-    res.send('.dist/travelplanner.html');
-})
+
 app.listen(8000, function () {
     console.log('Example app listening on port 8000!')
 })
